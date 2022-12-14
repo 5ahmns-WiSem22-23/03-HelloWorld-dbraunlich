@@ -24,19 +24,19 @@ public class HelloMethoden : MonoBehaviour
         Debug.Log("after startValue3: " + startValue3);
 
         Debug.Log("before startValue4: " + startValue4);
-        DecrementByOne(startValue4);
+        OutputDecrementedValue(startValue4);
         Debug.Log("after startValue4: " + startValue4);
 
         Debug.Log("before startValue5: " + startValue5);
-        startValue5 = DecrementByX(startValue5, 2);
+        startValue5 =GetDifference(startValue5, 2);
         Debug.Log("after startValue5: " + startValue5);
     }
-    private int DecrementByX(int start, int valToSub)
+    private int GetDifference(int a, int b)
     {
-        return start - valToSub;
+        return a - b;
     }
 
-    private void DecrementByOne(int val)
+    private void OutputDecrementedValue(int val)
     {
         val--;
         Debug.Log("val: " + val);
